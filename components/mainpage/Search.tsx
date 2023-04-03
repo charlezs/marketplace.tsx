@@ -15,10 +15,13 @@ export default function Search() {
           display="flex"
           alignItems="center"
           pointerEvents="none"
-          children={<Search2Icon color="gray.300" />}
-        />
+        >
+          <Search2Icon color="gray.300" />
+        </InputLeftElement>
         <Input type="value" placeholder="Search Projects" />
-        <InputRightAddon bg="#3575E2" w="10%" children="Search" />
+        <InputRightAddon bg="#3575E2" w="10%">
+          Search
+        </InputRightAddon>
       </InputGroup>
     </Box>
   );
